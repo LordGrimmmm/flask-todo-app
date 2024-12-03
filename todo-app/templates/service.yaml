@@ -7,5 +7,5 @@ spec:
     app: todo-app
   ports:
   - port: {{ .Values.service.port }}
-    targetPort: 8080
+    targetPort: 6969
   type: {{ .Values.service.type }}
