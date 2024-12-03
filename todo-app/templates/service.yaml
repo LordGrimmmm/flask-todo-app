@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Release.Name }}-todo-app-service
+spec:
+  selector:
+    app: todo-app
+  ports:
+  - port: {{ .Values.service.port }}
+    targetPort: 8080
+  type: {{ .Values.service.type }}
