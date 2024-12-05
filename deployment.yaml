@@ -17,3 +17,16 @@ spec:
         image: lord6rimm/flask-todo-app:latest
         ports:
         - containerPort: 5000  # Adjust based on your app's port
+
+--
+apiVersion: v1
+kind: Service
+metadata:
+  name: your-app-service
+spec:
+  selector:
+    app: your-app
+  ports:
+  - port: 80
+    targetPort: 80
+  type: LoadBalancer

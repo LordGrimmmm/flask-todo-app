@@ -24,9 +24,9 @@ pipeline {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'docker-hub-credentials', usernameVariable: 'lord6rimm', passwordVariable: 'Hello,5384')]) {
                     bat """
-                        docker login -u %USERNAME% -p %PASSWORD%
-                        docker tag flask-todo-app %USERNAME%/flask-todo-app:latest
-                        docker push %USERNAME%/flask-todo-app:latest
+                        docker login -u lord6rimm -p Hello,5384
+                        docker tag flask-todo-app lord6rimm/flask-todo-app:latest
+                        docker push lord6rimm/flask-todo-app:latest
                     """
                 }
             }

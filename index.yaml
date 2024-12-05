@@ -3,12 +3,12 @@ entries:
   todo-app:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-12-03T15:05:20.1539268-05:00"
+    created: "2024-12-04T21:27:14.9086745-05:00"
     description: A Helm chart for Kubernetes
-    digest: c2cbdb7fe6b14d97dfa057a41ec4ce5ab955e31c0533fb15368d21004202b282
+    digest: 358a8b831385317747255859960bb21c95ba4da44787be5d892cc79ed7ce6154
     name: todo-app
     type: application
     urls:
-    - todo-app-0.1.0.tgz
+    - https://LordGrimmmm.github.io/flask-todo-app/todo-app-0.1.0.tgz
     version: 0.1.0
-generated: "2024-12-03T15:05:20.1528235-05:00"
+generated: "2024-12-04T21:27:14.9076282-05:00"
